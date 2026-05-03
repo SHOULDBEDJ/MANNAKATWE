@@ -8,10 +8,5 @@
     { "src": "/api/(.*)", "dest": "backend/server.js" },
     { "src": "/uploads/(.*)", "dest": "backend/server.js" },
     { "src": "/(.*)", "dest": "frontend/dist/$1" }
-  ],
-  "env": {
-    "TURSO_URL": "@turso_url",
-    "TURSO_AUTH_TOKEN": "@turso_auth_token",
-    "FRONTEND_URL": "@frontend_url"
-  }
+  ]
 }
