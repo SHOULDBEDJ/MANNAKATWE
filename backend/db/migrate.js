@@ -164,7 +164,8 @@ for (let i = 0; i < kpis.length; i++) {
   });
 }
 
-await db.execute(`INSERT OR IGNORE INTO users (username, password, permissions) VALUES ('manna123', 'manna123', 'all')`);
+await db.execute(`INSERT OR IGNORE INTO users (username, password, permissions) VALUES ('manna123', 'manna321', 'all')`);
+await db.execute(`UPDATE users SET password = 'manna321' WHERE username = 'manna123'`);
 
 console.log('All tables created. Seed data inserted.');
 process.exit(0);
