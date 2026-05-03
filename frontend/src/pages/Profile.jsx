@@ -199,8 +199,6 @@ export default function Profile({ user, onLogout }) {
           </button>
         </div>
       </form>
-        </div>
-      </form>
 
       {/* User Management Section (Only for Super Admins) */}
       {user?.permissions === 'all' && (
