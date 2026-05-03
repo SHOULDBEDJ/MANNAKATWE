@@ -9,3 +9,5 @@ backend/uploads/*
 frontend/dist
 .vite
 .vercel
+*.db
+backend/*.db
